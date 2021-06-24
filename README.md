@@ -62,6 +62,8 @@ S3 バケットが作成されたことを確認して次の手順へ進みま�
 
 ## CloudFormation Package
 
+Lambda をパッケージ化します。  
+
 ```bash
 aws cloudformation package \
     --template-file aws-cost-saver.yml \
@@ -70,6 +72,9 @@ aws cloudformation package \
 ```
 
 ## CloudFormation Deploy
+
+packaged-template.yml が正しく作成されていれば  
+次のコマンドでデプロイします。  
 
 ```bash
 aws cloudformation deploy \
